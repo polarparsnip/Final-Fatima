@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import hi.verkefni.vidmot.Hero?>
+<?import hi.verkefni.vidmot.Bygging?>
+
+<fx:root type="javafx.scene.layout.Pane" xmlns:fx="http://javafx.com/fxml" xmlns="http://javafx.com/javafx/19" >
+    <Hero fx:id="hero"/>
+    <Bygging fx:id="b1" />
+    <Bygging fx:id="b2" />
+    <Bygging fx:id="b3" />
+    <Bygging fx:id="b4" />
+
+    <Bygging fx:id="b5" />
+    <Bygging fx:id="b6" />
+</fx:root>

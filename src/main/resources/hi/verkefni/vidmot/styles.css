@@ -1,0 +1,75 @@
+
+#fxMenu {
+    -fx-background-size: contain, contain, contain, contain;
+    -fx-background-position: bottom, bottom, bottom, bottom;
+    -fx-background-repeat: repeat-x, repeat-x, repeat-x, repeat-x;
+    -fx-background-image:
+        url("myndir/night-sky.gif"),
+        url("myndir/layer_04-buildings.png"),
+        url("myndir/layer_03-buildings.png"),
+        url("myndir/layer_02-buildings.png"),
+        url("myndir/layer_01-fire.png");
+}
+
+#fxLeikbord, #fxLeikbordTwo, #fxLeikbordThree {
+    -fx-background-size: contain, contain, contain, contain, contain;
+    -fx-background-position: bottom, bottom, bottom, bottom, bottom;
+    -fx-background-repeat: repeat-x, repeat-x, repeat-x, repeat-x, repeat-x;
+    -fx-background-image:
+        url("myndir/layer_05-skyline.jpg"),
+        url("myndir/layer_04-buildings.png"),
+        url("myndir/layer_03-buildings.png"),
+        url("myndir/layer_02-buildings.png"),
+        url("myndir/layer_01-fire.png");
+}
+
+#fxLeikbordTwo {
+    -fx-background-image:
+        url("myndir/evening-sky.jpg"),
+        url("myndir/layer_04-buildings.png"),
+        url("myndir/layer_03-buildings.png"),
+        url("myndir/layer_02-buildings.png"),
+        url("myndir/layer_01-fire.png");
+}
+
+#fxLeikbordThree {
+    -fx-background-image:
+        url("myndir/night-sky.gif"),
+        url("myndir/layer_04-buildings.png"),
+        url("myndir/layer_03-buildings.png"),
+        url("myndir/layer_02-buildings.png"),
+        url("myndir/layer_01-fire.png");
+}
+
+.text-area .content {
+    -fx-background-color: transparent;
+    -fx-text-align: center;
+}
+
+.text-area *.text {
+    -fx-text-alignment: center;
+    -fx-background-color: transparent;
+}
+
+.text-area .scroll-pane .viewport{
+    -fx-background-color: transparent;
+}
+
+.menuButtons:hover {
+    -fx-text-fill: white;
+}
+
+.settings, .levels {
+    -fx-background-image: url("myndir/Cool-Background-GIF.gif");
+    -fx-background-size: 600px 500px;
+}
+
+.levelCleared {
+    -fx-background-color: black;
+}
+
+.gameOver {
+    -fx-background-image: url("myndir/Cool-Background-GIF.gif");
+    -fx-background-size: 600px 500px;
+}
+

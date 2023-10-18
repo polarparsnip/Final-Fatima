@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<?import hi.verkefni.vidmot.Leikbord?>
+<BorderPane fx:id="content" maxHeight="500.0" maxWidth="600.0" minHeight="500.0" minWidth="600.0" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hi.verkefni.vidmot.GameController">
+   <center>
+      <Leikbord fx:id="fxLeikbord" BorderPane.alignment="CENTER" />
+   </center>
+   <bottom>
+      <Pane style="-fx-background-color: #000000; -fx-border-color: #000000; -fx-border-width: 3;" BorderPane.alignment="CENTER">
+         <children>
+            <Button styleClass="menuButtons" layoutX="7.0" layoutY="5.0" minHeight="28.0" mnemonicParsing="false" onAction="#menuHandler" prefHeight="34.0" prefWidth="76.0" style="-fx-background-color: #000000; -fx-cursor: hand;" text="Return" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <Rectangle height="20.0" layoutX="140.0" layoutY="13.0" style="-fx-stroke: white; -fx-stroke-width: 2; -fx-stroke-type: INSIDE;" width="320.0" />
+            <Rectangle fx:id="progressBar" fill="RED" height="16.0" layoutX="142.0" layoutY="15.0" />
+         </children>
+      </Pane>
+   </bottom>
+   <stylesheets>
+      <URL value="@styles.css" />
+   </stylesheets>
+   <top>
+   </top>
+</BorderPane>

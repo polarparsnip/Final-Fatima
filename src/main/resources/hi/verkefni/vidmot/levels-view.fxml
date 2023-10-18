@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: #000000;" styleClass="levels" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hi.verkefni.vidmot.Levels">
+    <children>
+        <Button layoutX="27.0" layoutY="312.0" mnemonicParsing="false" onAction="#levelOneHandler" prefHeight="42.0" prefWidth="172.0" style="-fx-background-color: darkblue; -fx-border-width: 3; -fx-border-color: white; -fx-background-insets: 2; -fx-cursor: hand;" styleClass="menuButtons" text="Play" textFill="RED">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+        </Button>
+        <Button fx:id="levelTwoButton" disable="true" layoutX="216.0" layoutY="312.0" mnemonicParsing="false" onAction="#levelTwoHandler" prefHeight="42.0" prefWidth="172.0" style="-fx-background-color: darkblue; -fx-border-width: 3; -fx-border-color: white; -fx-background-insets: 2; -fx-cursor: hand;" styleClass="menuButtons" text="Play" textFill="RED">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+        </Button>
+        <Button fx:id="levelThreeButton" disable="true" layoutX="403.0" layoutY="312.0" mnemonicParsing="false" onAction="#levelThreeHandler" prefHeight="42.0" prefWidth="172.0" style="-fx-background-color: darkblue; -fx-border-width: 3; -fx-border-color: white; -fx-background-insets: 2; -fx-cursor: hand;" styleClass="menuButtons" text="Play" textFill="RED">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+        </Button>
+        <TextField fx:id="fxMenuText" editable="false" layoutX="203.0" layoutY="14.0" prefHeight="81.0" prefWidth="197.0" style="-fx-background-color: transparent; -fx-text-fill: red;" text="Levels">
+            <font>
+                <Font name="System Bold" size="48.0" />
+            </font>
+        </TextField>
+        <ImageView fitHeight="119.0" fitWidth="172.0" layoutX="27.0" layoutY="193.0">
+            <image>
+                <Image url="@myndir/level1.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="119.0" fitWidth="172.0" layoutX="216.0" layoutY="193.0">
+            <image>
+                <Image url="@myndir/level2.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="119.0" fitWidth="172.0" layoutX="403.0" layoutY="193.0">
+            <image>
+                <Image url="@myndir/level3.png" />
+            </image>
+        </ImageView>
+      <TextField editable="false" layoutX="34.0" layoutY="116.0" prefHeight="77.0" prefWidth="159.0" style="-fx-background-color: transparent; -fx-text-fill: white;" text="Level 1">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </TextField>
+      <TextField editable="false" layoutX="221.0" layoutY="116.0" prefHeight="77.0" prefWidth="159.0" style="-fx-background-color: transparent; -fx-text-fill: white;" text="Level 2">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </TextField>
+      <TextField editable="false" layoutX="410.0" layoutY="116.0" prefHeight="77.0" prefWidth="159.0" style="-fx-background-color: transparent; -fx-text-fill: white;" text="Level 3">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </TextField>
+      <Button layoutX="27.0" layoutY="417.0" mnemonicParsing="false" onAction="#menuHandler" prefHeight="42.0" prefWidth="172.0" style="-fx-background-color: red; -fx-border-width: 3; -fx-border-color: white; -fx-background-insets: 2; -fx-cursor: hand; -fx-border-radius: 9;" styleClass="menuButtons" text="Return">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <PasswordField fx:id="fxLevelsCode" alignment="CENTER" layoutX="366.0" layoutY="425.0" promptText="Enter code" style="-fx-background-color: #000000; -fx-border-color: white; -fx-text-fill: white;" />
+      <Button layoutX="517.0" layoutY="425.0" mnemonicParsing="false" onAction="#levelCodeUnlocker" style="-fx-border-color: white; -fx-background-color: red; -fx-background-insets: 0.1; -fx-cursor: hand;" styleClass="menuButtons" text="Submit">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <TextField editable="false" layoutX="388.0" layoutY="396.0" prefHeight="25.0" prefWidth="107.0" style="-fx-text-fill: red; -fx-background-color: transparent;" text="Unlock all levels">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </TextField>
+      <Region layoutX="27.0" layoutY="193.0" prefHeight="119.0" prefWidth="172.0" style="-fx-border-color: white; -fx-border-width: 3;" />
+      <Region layoutX="216.0" layoutY="193.0" prefHeight="119.0" prefWidth="172.0" style="-fx-border-color: white; -fx-border-width: 3;" />
+      <Region layoutX="403.0" layoutY="193.0" prefHeight="119.0" prefWidth="172.0" style="-fx-border-color: white; -fx-border-width: 3;" />
+    </children>
+    <stylesheets>
+        <URL value="@styles.css" />
+    </stylesheets>
+</AnchorPane>
